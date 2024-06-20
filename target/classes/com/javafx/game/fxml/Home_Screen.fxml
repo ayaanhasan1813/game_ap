@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<Pane fx:id="scene_pane" prefHeight="750" prefWidth="400" xmlns="http://javafx.com/javafx/13" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javafx.game.Home_Screen">
+    <!-- Background image -->
+    <ImageView fitHeight="750" fitWidth="400" pickOnBounds="true">
+        <image>
+            <Image url="@../backgrounds/LANDSCAPE.png" />
+        </image>
+    </ImageView>
+
+    
+    <!-- stick hero image -->
+    <ImageView fitHeight="155" layoutX="46" layoutY="46" pickOnBounds="true" preserveRatio="true"> 
+        <image>
+            <Image url="@../bitmaps/STICK HERO.png" />
+        </image>
+    </ImageView>
+
+    <ImageView fx:id="idle_hero_imageview" fitHeight="60" fitWidth="60" layoutX="178.0" layoutY="569.0" pickOnBounds="true" preserveRatio="true"> 
+        <!-- <image>
+            <Image url="@../animations/Idle/idle1.png" />
+        </image> -->
+    </ImageView>
+
+
+    <Rectangle fill="BLACK"  height="130.0" width="90.0" layoutX="155.0" layoutY="620.0"  />
+
+    
+    <!-- Button placed at specific layout coordinates -->
+    <Button fx:id="play_button" alignment="CENTER" layoutX="127.5" layoutY="310" onMouseClicked="#play_button_click" onMouseEntered="#play_button_enter" onMouseExited="#play_button_exit" prefHeight="10" prefWidth="10.0" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-padding: 0;"> 
+        <graphic>
+            <ImageView fx:id="play_button_imageview" fitHeight="145" fitWidth="145" pickOnBounds="true" preserveRatio="true">
+                <effect>
+                    <ColorAdjust fx:id="play_button_coloradjust" brightness="0.0" />
+                </effect>
+                <image>
+                    <Image url="@../buttons/PLAY.png" /> 
+                </image>
+            </ImageView>
+        </graphic>
+    </Button>
+
+
+    <!-- load button fxml  -->
+    <Button fx:id="load_button" layoutX="314.0" layoutY="620" onMouseClicked="#load_button_click" onMouseEntered="#load_button_enter" onMouseExited="#load_button_exit" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-padding: 0;"> 
+        <graphic>
+            <ImageView fx:id="load_button_imageview" fitHeight="60" fitWidth="60" pickOnBounds="true" preserveRatio="true">
+                <effect>
+                    <ColorAdjust fx:id="load_button_coloradjust" brightness="0.0" />
+                </effect>
+                <image>
+                    <Image url="@../buttons/LOAD_GAME.png" /> 
+                </image>
+            </ImageView>
+        </graphic>
+    </Button>
+
+    <!-- volume button fxml  -->
+    <Button fx:id="volume_button" layoutX="25" layoutY="620" onMouseClicked="#volume_button_click" onMouseEntered="#volume_button_enter" onMouseExited="#volume_button_exit" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-padding: 0;"> 
+        <graphic>
+            <ImageView fx:id="volume_button_imageview" fitHeight="60" fitWidth="60" pickOnBounds="true" preserveRatio="true">
+                <effect>
+                    <ColorAdjust fx:id="volume_button_coloradjust" brightness="0.0" />
+                </effect>
+                <image>
+                    <Image url="@../buttons/VOLUME_ON.png" /> 
+                </image>
+            </ImageView>
+        </graphic>
+    </Button>
+
+</Pane>

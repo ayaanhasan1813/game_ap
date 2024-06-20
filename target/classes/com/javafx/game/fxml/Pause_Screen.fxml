@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+
+
+<!-- make bacground   and home_button -->
+<Pane prefHeight="750" prefWidth="400" xmlns="http://javafx.com/javafx/13" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javafx.game.Pause_Screen">
+
+    <!-- Background image -->
+    <ImageView fitHeight="750" fitWidth="400" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@../backgrounds/LANDSCAPE.png" />
+        </image>
+    </ImageView>
+
+    <!-- corner resume -->
+    <ImageView  fitWidth="45" fitHeight="45" pickOnBounds="true" preserveRatio="true"
+            layoutX="16" layoutY="18"> 
+        <image>
+            <Image url="@../buttons/RESUME.png" />
+        </image>
+    </ImageView>
+
+    <!-- cherry  handling  -->
+    <ImageView fitHeight="45" fitWidth="45" layoutX="340.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@../bitmaps/CHERRY.png" />
+        </image>
+    </ImageView>
+    <!-- <Text fx:id="cherry_counter" fill="WHITE" layoutX="316.0" layoutY="50.0" style="-fx-font-size: 19pt;" text="0" /> -->
+
+    <!-- paused -->
+    <ImageView  fitWidth="300" layoutX="50" layoutY="65" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@../bitmaps/PAUSED!.png" />
+        </image>
+    </ImageView>
+
+    <Text fx:id="score_count" layoutX="125.0" layoutY="242.0" style="-fx-font-size: 40pt;" text="" textAlignment="CENTER" wrappingWidth="150.0" />
+    <Text fx:id="best_score_count" layoutX="125.0" layoutY="329.0" style="-fx-font-size: 40pt;" text="" textAlignment="CENTER" wrappingWidth="150.0" />
+    
+    <!-- Button placed at specific layout coordinates -->
+    <Button fx:id="home_button" 
+            onMouseEntered="#home_button_enter" onMouseExited="#home_button_exit"  onMouseClicked="#home_button_click"
+            style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-padding: 0;"
+            prefWidth="10" prefHeight="10" 
+            layoutX="77.5" layoutY="491.5"> 
+        <graphic>
+            <ImageView fx:id="home_button_imageview" fitWidth="75" fitHeight="75" pickOnBounds="true" preserveRatio="true">
+                <effect>
+                    <ColorAdjust fx:id="home_button_coloradjust" brightness="0.0" />
+                </effect>
+                <image>
+                    <Image url="@../buttons/HOME.png" /> 
+                </image>
+            </ImageView>
+        </graphic>
+    </Button>
+
+    <!-- resume button fxml -->
+    <Button fx:id="resume_button" 
+            onMouseEntered="#resume_button_enter" onMouseExited="#resume_button_exit"  onMouseClicked="#resume_button_click"
+            style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-padding: 0;"
+            prefWidth="10" prefHeight="10" 
+            layoutX="162.5" layoutY="491.5"> 
+        <graphic>
+            <ImageView fx:id="resume_button_imageview" fitWidth="75" fitHeight="75" pickOnBounds="true" preserveRatio="true">
+                <effect>
+                    <ColorAdjust fx:id="resume_button_coloradjust" brightness="0.0" />
+                </effect>
+                <image>
+                    <Image url="@../buttons/RESUME.png" /> 
+                </image>
+            </ImageView>
+        </graphic>
+    </Button>
+
+    <!-- restart button fxml -->
+    <Button fx:id="restart_button" 
+            onMouseEntered="#restart_button_enter" onMouseExited="#restart_button_exit"  onMouseClicked="#restart_button_click"
+            style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-padding: 0;"
+            prefWidth="10" prefHeight="10" 
+            layoutX="247.5" layoutY="491.5"> 
+        <graphic>
+            <ImageView fx:id="restart_button_imageview" fitWidth="75" fitHeight="75" pickOnBounds="true" preserveRatio="true">
+                <effect>
+                    <ColorAdjust fx:id="restart_button_coloradjust" brightness="0.0" />
+                </effect>
+                <image>
+                    <Image url="@../buttons/RESTART.png" /> 
+                </image>
+            </ImageView>
+        </graphic>
+    </Button>
+
+    <!-- save button fxml -->
+    <Button fx:id="save_button" 
+            onMouseEntered="#save_button_enter" onMouseExited="#save_button_exit"  onMouseClicked="#save_button_click"
+            style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-padding: 0;"
+            prefWidth="10" prefHeight="10" 
+            layoutX="113" layoutY="392"> 
+        <graphic>
+            <ImageView fx:id="save_button_imageview" fitWidth="175" fitHeight="65" pickOnBounds="true" preserveRatio="true">
+                <effect>
+                    <ColorAdjust fx:id="save_button_coloradjust" brightness="0.0" />
+                </effect>
+                <image>
+                    <Image url="@../buttons/SAVE.png" /> 
+                </image>
+            </ImageView>
+        </graphic>
+    </Button>
+
+</Pane>

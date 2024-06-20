@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id = "pane" prefHeight="750" prefWidth="400" xmlns="http://javafx.com/javafx/13" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javafx.game.Play_Screen" 
+    onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" >
+    
+
+    <!-- Background image -->
+    <ImageView  fx:id ="background_imageview" fitHeight="750" fitWidth="400" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@../backgrounds/LANDSCAPE.png" />
+        </image>
+    </ImageView>
+
+
+    <!-- points score handling -->
+    <ImageView fitHeight="50" fitWidth="100" layoutX="150" layoutY="100" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@../bitmaps/SCORE BOX.png" />
+        </image>
+    </ImageView>
+    <Text fx:id="score_counter" fill="WHITE" layoutX="150.0" layoutY="138.0" style="-fx-font-size: 26pt;" text="" textAlignment="CENTER" wrappingWidth="100.0" />
+
+    <!-- cherry  handling  -->
+    <ImageView fx:id="cherry_image_view" fitHeight="45" fitWidth="45" layoutX="340.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@../bitmaps/CHERRY.png" />
+        </image>
+    </ImageView>
+    <Text fx:id="cherry_counter" fill="WHITE" layoutX="256.0" layoutY="50.0" style="-fx-font-size: 19pt;" text="" textAlignment="RIGHT" wrappingWidth="76.0" />
+
+
+    <!-- Button placed at specific x and y coordinates -->
+    <Button fx:id="pause_button" layoutX="15" layoutY="17" onMouseClicked="#pause_button_click" onMouseEntered="#pause_button_enter" onMouseExited="#pause_button_exit" prefHeight="10" prefWidth="10" style="-fx-background-color: transparent ; -fx-border-color: transparent; -fx-background-insets: 0; -fx-padding: 0;">
+        <graphic>
+            <ImageView fx:id="pause_button_imageview" fitHeight="45" fitWidth="45" pickOnBounds="true" preserveRatio="true">
+                <effect>
+                    <ColorAdjust fx:id="pause_button_coloradjust" brightness="0.0" />
+                </effect>
+                <image>
+                    <Image url="@../buttons/PAUSE.png" /> 
+                </image>
+            </ImageView>
+        </graphic>
+    </Button>
+</Pane>
