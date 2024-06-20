@@ -1,6 +1,6 @@
 # Stick Hero Game
 
-Welcome to Stick Hero, a simple JavaFX game where the goal is to extend a stick to reach the next platform. The game is developed by Kanishk and Ayaan.
+Welcome to Stick Hero, a simple JavaFX game where the goal is to extend a stick to reach the next platform.
 ![gif](https://github.com/ayaanhasan1813/game_ap/assets/133657890/7667392d-d6c0-4329-a082-0ce5bffb11b5)
 
 
