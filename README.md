@@ -63,8 +63,8 @@ The Stick Hero game uses JavaFX for graphical user interface components. Make su
 This game is provided under the MIT License. Feel free to use, modify, and distribute the game as per the terms of the license. 
 
 # CONTRIBUTORS
-AYAAN HASAN
-KANISHK KUMAR MEENA
+1. AYAAN HASAN
+2. KANISHK KUMAR MEENA
                                                       
 
 
